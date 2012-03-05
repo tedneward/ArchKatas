@@ -1,0 +1,8 @@
+{
+  "title" : "All Stuff, No Cruft",
+  "description" : [
+    "Conference organizer needs a management system for the conferences he runs",
+    "Requirements: attendees can access speaking schedule online, including room assignments; speakers can manage talks (enter, edit, modify); attendees \"vote up/down\" talks; organizer can notify attendees of schedule changes up-to-the-minute (if attendees opt in); each conference (being a different subject) can be branded independently; speaker slides are accessible online only to attendees; evaluation system via web page, email, SMS, or phone",
+    "Users: hundreds of speakers, dozens of event staff, thousands of attendees"
+  ]
+}

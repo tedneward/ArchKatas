@@ -1,0 +1,8 @@
+{
+  "title" : "Fantasy Fantasy NFL",
+  "description" : [
+    "NFL-associated website wants to create the ultimate online fantasy football experience, complete with \"real\" video",
+    "Requirements: players \"draft\" players, as per usual fantasy football rules; each Sunday, complete video footage of every real game must be analyzed and sliced into video clips for every player; then, on Thursday (after the last game is played) the video clips for that fantasy players' players must be stitched together into a \"highlight reel\" for that fantasy team and emailed to that player, giving them clips to go with their scores for that weeks' fantasy games",
+    "Users: millions of users, organized into (roughly) 8-to-16 players per fantasy league"
+  ]
+}

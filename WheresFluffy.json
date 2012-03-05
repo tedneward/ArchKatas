@@ -1,0 +1,7 @@
+{
+  "title" : "Where's Fluffy?",
+  "description" : [
+    "People who lose their pets often post on Craigslist or post fliers around the neighborhood. Local business folks want to go one better, a service describing missing pets, pet rewards (brokered/managed by the service), and location data points (GPS) of pet sightings",
+    "Requirements: users interested in finding pets register on the site; anyone can see a list of pets missing near to their location; pet finders can post \"pet found\" messages (with mandatory photo proof) and collect rewards on confirmation from pet owners; users can comment on pet missing entries, offering data points (sighted, area checked with no results, etc); local scalability (per-city), but possibly scaling out to other cities; mobile device accessibility"
+  ]
+}

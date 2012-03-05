@@ -1,0 +1,7 @@
+{
+  "title" : "E(xperimental) College",
+  "description" : [
+    "Local college now offers unique non-credit courses in addition to the usual grad/undergrad courses, and they need a registration and payment system",
+    "Requirements: existing central student/class registry is NOT integratable--only https web form access allowed; accept payments; track registrations; non-credit registrations must be duplicated in central registry (but not by hand!); students enter the central registry if their payment succeeds; updates/deletes from the central registry is okay as a manual process but preferably automated; payments: credit card, bank account withdrawal, check or cash; course prereqs; students can request invoice/receipts and/or transcripts (which should be emailed); multiple students register for multiple classes with one purchase; admins must see course lists, payments, but not student personal info"
+  ]
+}

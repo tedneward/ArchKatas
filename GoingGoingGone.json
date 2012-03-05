@@ -1,0 +1,7 @@
+{
+  "title" : "Going Going Gone!",
+  "description" : [
+    "An auction company wants to take their auctions online to a nationwide scale--customers choose the auction to participate in, wait until the auction begins, then bid as if they were there in the room, with the auctioneer",
+    "Requirements: auctions must be categorized and \"discoverable\"; auctions must be real-time; auctions must be mixed live and online; video stream of the action; money exchange; participants must be tracked (reputation); scale up to hundreds of participants (per auction), potentially up to thousands of participants, and as many simultaneous auctions as possible"
+  ]
+}
