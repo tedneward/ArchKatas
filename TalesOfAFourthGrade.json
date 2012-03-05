@@ -1,0 +1,8 @@
+{
+  "title" : "Tales Of A Fourth Grade",
+  "description" : [
+    "An elementary school system comprehensive student management system",
+    "Requirements: track absences, tardies and excuses (entered by parents, faculty or staff); generate reports on student activities; be accessible from the playground; track student grades and assignments (completed and due); parent-teacher forums; run as an SaaS system from a hosting center",
+    "Users: faculty, staff and student parents"
+  ]
+}

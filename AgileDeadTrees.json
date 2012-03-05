@@ -1,0 +1,8 @@
+{
+  "title" : "Agile Dead Trees",
+  "description" : [
+    "A publisher wants to unify its authoring CMS and customer store experience",
+    "Users: dozens of publisher employees, hundreds of authors, thousands/millions of customers",
+    "Requirements: authors publish chapters; reviewers see the chapters, make review comments, and notify authors on review; authors can reject proposed review changes; customers can buy books (either e- form or dead trees form) online, including those available in \"beta\"; publisher can push authors' chapters to those customers who bought the \"beta\""
+  ]
+}

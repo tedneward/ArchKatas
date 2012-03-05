@@ -1,0 +1,8 @@
+{
+  "title" : "Sysop Squad",
+  "description" : [
+    "An electronics giant needs a new trouble-ticket system for their customer-facing IT consultants (the Sysop Squad) in their stores nationwide",
+    "Requirements: trouble tickets can be entered by either call-center receptionists, store staff or customers online; tickets route to the appropriate consultant based on location, availability and skill; customers enter consultant evaluation after service; consultant tracks work performed in customer record(s) for future reference",
+    "Users: thousands of customers, hundreds of consultants, hundreds of store staff"
+  ]
+}
