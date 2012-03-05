@@ -40,14 +40,14 @@
           <a class="brand" href="#">Architectural Katas</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="contact">Contact</a></li>
-              <li><a href="rules">Rules</a></li>
-              <li><a href="contribute">Contribute</a></li>
-              <li><a href="invite">Invite</a></li>
-              <li><a href="lead">Lead</a></li>
-              <li><a href="join">Join</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="rules.html">Rules</a></li>
+              <li><a href="contribute.html">Contribute</a></li>
+              <li><a href="invite.html">Invite</a></li>
+              <li><a href="lead.html">Lead</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -61,6 +61,8 @@
             <h2>Your Architectural Kata is...</h2>
             <h1 id="kata-title"></h1>
             <p id="kata-text"></p>
+            <p />
+            <p id="bookmark-url"></p>
           </div>
         </div><!--/span-->
       </div><!--/row-->
@@ -78,30 +80,60 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap-collapse.js"></script>
+    <script src="./js/urlvars.js"></script>
     
     <script>
-    // Pull data from BitBucket API
     var serverSrcBase = 'https://api.bitbucket.org/1.0/repositories/TedNeward/archkatas/src/tip'
-    $.getJSON(serverSrcBase + '/?callback=?',
-      function(data) {
-        // data.files { size, path, timestamp, utctimestamp }
-        var items = data.files.length;
-        if (items > 0)
-        {
-          var which = Math.floor(Math.random() * items);
-          var path = data.files[which].path
-          alert("Fetching " + serverSrcBase + '/' + path)
-          $.getJSON(serverSrcBase + '/' + path + "?callback=?",
-          	function(kataData) {
-          	  var kata = jQuery.parseJSON(kataData.data)
-          	  $('#kata-title').text(kata.title)
-          	  $.each(kata.description, function(key, val) {
-          	  	$('#kata-text').append('<p>' + val + '</p>')
-          	  })
-          	}
-          )
-        }
-      });
+
+    var fetchKata = function(filename) {
+	  $.getJSON(serverSrcBase + '/' + filename + "?callback=?",
+		function(kataData) {
+		  var kata = jQuery.parseJSON(kataData.data)
+		  $('#kata-title').text(kata.title)
+		  $.each(kata.description, function(key, val) {
+			$('#kata-text').append('<p>' + val + '</p>')
+		  })
+          $('#bookmark-url').html('<a target="_blank" href="kata.html?kata=' + filename + '">Bookmark or click this to save your kata choice</a>');
+		}
+	  )
+    }
+
+    var kataname = $.getUrlVar('kata');
+    if (kataname === "all")
+    {
+		$.getJSON(serverSrcBase + '/?callback=?',
+		  function(data) {
+			// data.files { size, path, timestamp, utctimestamp }
+			var items = data.files.length;
+			if (items > 0)
+			{
+			  $('#kata-title').text("All Katas")
+			  $.each(data.files, function(key, val) {
+			  	$('#kata-text').append('<p><a href="kata.html?kata=' + val.path + '">' + val.path + '</a></p>');
+			  })
+			}
+		  });
+    }
+    else if (kataname !== undefined)
+    {
+        // We want a specific kata; we assume it exists already (sort of)
+        fetchKata(kataname)
+    }
+    else
+    {
+		// Pull data from BitBucket API
+		$.getJSON(serverSrcBase + '/?callback=?',
+		  function(data) {
+			// data.files { size, path, timestamp, utctimestamp }
+			var items = data.files.length;
+			if (items > 0)
+			{
+			  var which = Math.floor(Math.random() * items);
+			  var path = data.files[which].path
+			  fetchKata(path)
+			}
+		  });
+      }
     </script>
 
   </body>
