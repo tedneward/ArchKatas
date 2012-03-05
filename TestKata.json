@@ -1,6 +1,6 @@
 {
-  title : "Test Kata #1",
-  description : [
+  "title" : "Test Kata #1",
+  "description" : [
     "This is a paragraph",
     "This is a second paragraph",
     "This is a third paragraph"
