@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Architectural Katas: Practicing Architecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link type="text/css" href="css/themename/jquery-ui-1.8.18.custom.css" rel="Stylesheet" />	
+    <script src="./js/jquery-1.7.1.min.js"></script>
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Architectural Katas</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="active"><a href="rules.html">Rules</a></li>
+              <li><a href="contribute.html">Contribute</a></li>
+              <li><a href="invite.html">Invite</a></li>
+              <li><a href="lead.html">Lead</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="hero-unit">
+            <h1>Rules</h1>
+            
+            <p>The rules are broken down by the different Phases of the exercise. However, one rule
+            trumps all the others: <strong>Any other questions that are not already covered by these
+            rules, you may ask the Moderator about.</strong> When in doubt, ask.</p>
+
+			<div>
+				<h2 id="preparation-phase">Preparation: Getting your project team together</h2>
+				<div>
+					<p>The first step is to assemble your project team. There are only a few rules
+					regarding the composition of your team:</p>
+					<p>
+						<ul>
+							<li><p><strong>Co-workers may not be in a group together.</strong> Obviously
+							in some cases (such as when this is being done internally within a
+							company) this will be impossible; in that case, seek to avoid teaming up
+							with people with whom you work regularly.</p></li>
+							<li><p><strong>Make sure you're sitting a little distance from any other
+							project team.</strong> You'll want to make sure you can converse with
+							your team without a lot of competition noise from other teams.</p></li>
+							<li><p><strong>None of you will really need a laptop.</strong> The point of
+							this exercise is not to spend the entire time looking stuff up on StackOverflow
+							or on Google/Bing/Yahoo. At the worst, you'll want a silicon-based device
+							to access this site, and to maybe help organize your thoughts.</p></li>
+							<li><p><strong>Procure supplies.</strong> However, having notepads,
+							whiteboards (if they are available in the room), and/or flip-charts to
+							scribble on and debate over are very helpful, and it might not hurt to
+							score a few before the other project teams take them all.</p></li>
+						</ul>
+					</p>
+					<p>Once that's done, <a target="_blank" href="kata.html">select your kata</a> 
+					and proceed on to the <a href="#discussion-phase">Discussion Phase</a>.</p>
+				</div>
+				
+				<hr />
+				
+				<h2 id="discussion-phase">Discussion Phase: Figuring out what you're building and building it</h2>
+				<div>
+					<p>For the next "N" minutes or hours (depending on what the Moderator tells you),
+					your project team will now examine the requirements for the kata as given, and
+					work out a rough vision of what the project's architecture will look like.</p>
+					<p>
+						<ul>
+							<li><p><strong>You may ask the Moderator any questions you have about the 
+							project.</strong> The Moderator is your customer, your boss, your
+							project manager, your IT ops guy.... Basically, the Moderator is everybody
+							except you.</p></li>
+							<li><p><strong>Any technology is fair game.</strong> Customers really don't
+							care, most of the time, what kind of technology you use... until they
+							care, anyway. Just because this exercise is being done at a particular
+							conference or user group doesn't imply the Moderator requires you to
+							use that technology; if something else makes more sense, run with it!
+							Just be prepared to defend its use during the 
+							<a href='#peer-review-phase'>Peer Review Phase</a>.</p></li>
+							<li><p><strong>You may safely make assumptions about technologies you don't
+							know well.</strong> However, any assumptions you make under this rule
+							<strong>must</strong> be clearly defined and described during the 
+							<a href='#peer-review-phase'>Peer Review Phase</a>.</p></li>
+							<li><p><strong>You may not assume you have hiring/firing authority over the
+							development team.</strong> No assumptions of developer All-Stars; assume
+							that a development team roughly as skilled as the one you work with on
+							a daily basis will be doing the implementation. (I know, for some of you
+							this will be a horrible disappointment. Life is not fair.)</p></li>
+						</ul>
+					</p>
+					<p>The Moderator will give you some kind of audio and visual cue when your time
+					is getting low, and then at some point, time will run out and it will be time to
+					move on to the <a href='#peer-review-phase'>Peer Review Phase</a>.</p>
+				</div>
+				
+				<hr/>
+				
+				<h2 id="peer-review-phase">Peer Review Phase: Presenting your architecture to the rest of the group</h2>
+				<div>
+					<p>During this phase, your project team will be doing one of two things, either
+					presenting to the rest of the group, or listening to other groups' presentations.</p>
+					<p>If you are presenting, you must...
+						<ul>
+							<li><p><strong>... present a vision of your proposal to the rest of the group.</strong>
+							If you have not yet selected a speaker (or speakers) for the project team,
+							now's probably a good time to do so. Remember that "brevity is the soul
+							of wit", and keep the presentation to a speedy minimum. The Moderator can
+							describe the requirements of the project to the rest of the group if 
+							necessary, and will speak with the customers' voice during your presentation
+							if required.</p></li>
+							<li><p><strong>... answer questions from the others about your proposal.</strong>
+							Remember, these are questions about the project, not about you or your
+							overall technical skills. As difficult as it can be sometimes, try to
+							remember that these are not personal assaults on your character or your
+							professional integrity, but attempts to find the holes in your thinking
+							that you'd rather be found <em>before</em> the project ships.</p></li>
+						</ul>
+					</p>
+					<p>If you are listening to the other groups, then your job is to ask questions of the
+					project team currently presenting. Please try to keep the questions constructive,
+					but feel free to openly question any choice or decision that you think might not
+					have been carefully examined or thought out. If the conversation devolves into a
+					shouted "Yes it does!"/"No it doesn't!" kind of back-and-forth, the Moderator
+					may send you both to your room without dessert. Remember that project teams may
+					assume anything about a technology they don't know well, so long as that assumption
+					is clearly spelled out; if they assumed something that you know to be false, by
+					all means inform them of that, but bear in mind that someone else in the room may
+					have different experience with it than you, and keep an open mind.</p>
+				</div>
+				
+				<hr />
+				
+				<h2 id="voting-phase">Voting Phase: Final feedback on the proposal</h2>
+				<div>
+					<p>After each project team has finished their presentation, then we move to the
+					voting phase. The Moderator will call out a "1-2-3", and you will each individually
+					give the project team an overall feedback vote:</p>
+					<p>
+						<ul>
+							<li><p><strong>Thumbs up</strong>: You thought they nailed it. They had
+							answers for all of the obvious questions, they had chosen tech that at
+							least seems credible and feasible, and they have a basic vision of the
+							project that doesn't have many (or any) murky areas. This doesn't mean
+							they have every answer, or that they have already produced a UML diagram,
+							it means that you have every confidence they could produce them given
+							enough time.</p></li>
+							<li><p><strong>Thumbs "meh" (out to the side)</strong>: You thought they
+							missed a few things, enough to make you a bit uncomfortable that they
+							really have a clear vision of what they're trying to build. They forgot
+							some key questions to ask the customer, they forgot some important aspect
+							of the project, or they just in general didn't give you the feeling that
+							they really "got it".</p></li>
+							<li><p><strong>Thumbs down</strong>: You thought they missed it, badly.
+							They made major assumptions that you think had no validity to it. They
+							never asked the customer any questions and got burned on a few bad
+							assumptions as a result. They thought that using assembly language to
+							build a website was a good idea. They really
+							bungled the job, and you would never want to work on this project.</p></li>
+						</ul>
+					</p>
+					<p>But all is not finished! Once the voting is complete, the ancient Klingon
+					proverb must be heeded: "Revenge is a dish best served cold". The project team
+					departing the stage chooses the next project team, and we repeat again by
+					going back to the <a href="#peer-review-phase">Peer Review Phase</a> for a new
+					project team.</p>
+				</div>
+			</div>
+			
+			<hr />
+
+			<p>If you think you're ready, get your Kata from the button:</p>
+            <p><a class="btn btn-primary btn-large" target="_blank" href="kata.html">Let's go! &raquo;</a></p>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Neward &amp; Associates 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+  </body>
+</html>
