@@ -1,0 +1,16 @@
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span9">
+          <div class="hero-unit" ng-model="kata">
+            <h2>Your Architectural Kata is...</h2>
+            <h1>{{kata.title}}</h1>
+            <p ng-repeat="line in kata.description">{{line}}</p>
+            <p />
+            <p><a target="_blank" href="#/kata?kata={{kata.filename}}">Bookmark or click this to save your kata choice</a></p>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+    </div><!--/.fluid-container-->
+
+  </body>
+</html>
