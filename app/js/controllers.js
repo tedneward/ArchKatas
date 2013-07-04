@@ -10,7 +10,7 @@ function KataCtrl($scope, $routeParams, $http) {
                  'archkatas/src/tip/';
 
   var fetch = function(path, onSuccess) {
-    $http({method:'jsonp', url: path + '?callback=JSON_CALLBACK'}).success(function(contents) {
+    $http({method:'jsonp', url: kataBase + path + '?callback=JSON_CALLBACK'}).success(function(contents) {
       onSuccess(contents);
     }).error(function(data, status) {
       console.log(data);
@@ -20,7 +20,7 @@ function KataCtrl($scope, $routeParams, $http) {
   var fetchKata = function(path) {
     fetch(path, function(contents) {
       $scope.kata = angular.fromJson(contents.data);
-      $scope.kata.filename = $routeParams.kata;
+      $scope.kata.filename = path;
     });
   };
 
@@ -31,7 +31,7 @@ function KataCtrl($scope, $routeParams, $http) {
     //
     if ($routeParams.kata == 'all') {
       // fetch all katas and determine the size of the collection
-      fetch(kataBase, function(contents) {
+      fetch('', function(contents) {
         var items = contents.files.length;
         if (items > 0)
         {
@@ -47,18 +47,19 @@ function KataCtrl($scope, $routeParams, $http) {
     }
     else if ($routeParams.kata.length > 0) {
       // Fetch a particular kata
-      fetchKata(kataBase + $routeParams.kata);
+      fetchKata($routeParams.kata);
     }
   }
   else {
     // fetch a kata at random
-    fetch(kataBase, function(contents) {
+    fetch('', function(data) {
+      var contents = angular.fromJson(data);
       var items = contents.files.length;
       if (items > 0)
       {
         var which = Math.floor(Math.random() * items);
         var path = contents.files[which].path;
-        fetchKata(kataBase + path)
+        fetchKata(path)
       }
     });
   }
