@@ -40,7 +40,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="about">About</a></li>
               <li><a href="rules.html">Rules</a></li>
               <li><a href="contribute.html">Contribute</a></li>
               <li><a href="invite.html">Invite</a></li>
@@ -53,69 +53,13 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="hero-unit">
-            <h1>Architectural Katas</h1>
-            <p>"How do we get great designers? Great designers design, of course." --Fred Brooks</p>
-            <p>"So how are we supposed to get great architects, if they only get the chance to
-            architect fewer than a half-dozen times in their career?" --Ted Neward</p>
-            <p><a class="btn btn-primary btn-large" href="kata.html">Do one! &raquo;</a></p>
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>About</h2>
-			  <p>The Architectural Katas started as a presentation workshop by Ted Neward. 
-			  They've taken on a life of their own.</p>
-              <p><a class="btn" href="about.html">Learn more &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Rules</h2>
-              <p>Doing an Architectural Kata requires you to obey a few rules in order to get the 
-              maximum out of the activity. </p>
-              <p><a class="btn" href="rules.html">Read rules &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Contribute</h2>
-	          <p>New Kata problems/proposals are always welcome. </p>
-              <p><a class="btn" href="contribute.html">Send ideas &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Invite</h2>
-              <p>Want an experienced Architectural Kata moderator to run the workshop at your
-              place of business? </p>
-              <p><a class="btn" href="invite.html">Contact &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Lead</h2>
-			  <p>Want to run the Architectural Katas yourself? There's only a few things you need
-			  to know before you do.</p>
-              <p><a class="btn" href="lead.html">Learn how &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Join</h2>
-	          <p>Want to find a group near you that's running the Architectural Katas? </p>
-              <p><a class="btn" href="join.html">Find groups &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
+    <div ng-view></div>
+    
+    <hr>
 
-      <hr>
-
-      <footer>
-        <p>&copy; Neward &amp; Associates 2012</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
- 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.7.1.min.js"></script>
+    <footer>
+      <p>&copy; Neward &amp; Associates 2012</p>
+    </footer>
 
   </body>
 </html>

@@ -39,3 +39,5 @@ describe('Kata controllers', function() {
     });
   });
 });
+  });
+});
