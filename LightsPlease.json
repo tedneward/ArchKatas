@@ -1,0 +1,9 @@
+{
+  "title" : "Lights, Please",
+  "description" : [
+    "A home electronics giant wants to build a system for home automation: turning lights on and off, locking and unlocking doors, remote camera observation, and so on.",
+    "Users: each system will be sold to consumers (small families), but the company expects to sell thousands of these units in the first three years.",
+    "Requirements: the system must be as turnkey as possible, but be sold in modular units (camera, lock, thermostat, etc) for easy purchase. The units must be accessible over the Internet (for remote monitoring and access), and it is assumed the user will have an existing WiFi setup (router and connection) to tap into. Customers must be able to program the system to control the various modules according to their own needs.",
+    "Other details: the electrical engineering for the units will be taken care of by other groups, and the software protocols for controlling the modules is flexible, according to the needs/designs of your architecture. (They will handle implementing the module side of the protocol, once you have specified it to them.)"
+  ]
+}
