@@ -1,0 +1,22 @@
+{
+    "title": "Vend Me",
+    "description": [
+        "(Originally intended for embedded systems architects)",
+        "The latest vending machine needs to compete with the wide range of features available in Japan. Your vending machine will need to be able to store cold or hot drinks. Have an interactive display. Multiple buttons to select drinks. A money return button. Off the shelf coin acceptor and bill acceptor. An “IC card” payment system (like Opal card). And any other features you can add to make your product stand out from others.",
+        "Prioritised backlog: Vend a cold drink when a button is pressed; Vend a cold drink only if enough coins have been entered; Vend a cold drink and give change if available; Refund money if power is lost; Store warm or cold drinks; Warn if there are warm and cool slots mixed up (all hot should be on the left or right); Allow IC card payment – updating payment ledgers over Cell connection.; Allow updating of the digital display from a remote service; Report stock levels to a remote service; Allow credit card payments",
+        "The hardware level controls are:",
+        " * Display allows writing to a true colour back buffer 2560×1600 and a page flip command",
+        " * Buttons report a “press” interrupt",
+        " * Coin acceptor will send an interrupt and the coin type inputted.",
+        " * Bill acceptor will send an interrupt and the coin type inputted.",
+        " * A coin dispenser that can be queried for current coin levels and instructed to release coins by type",
+        " * A 3G mobile connection",
+        " * A NFC reader specific to IC cards",
+        " * A NFC reader for Credit Cards",
+        " * Drink stores can report the current inventory for each slot",
+        " * There is a control to set cooling or heating (or off) for each slot",
+        " * An interrupt that reports if the machine has been opened or closed (a key is required)",
+        " * A power down notification is sent 30ms before all power is lost."
+    ],
+    "credit": "Geoffrey Dunn"
+}

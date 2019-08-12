@@ -1,0 +1,16 @@
+{
+    "title": "Ding, Dong!",
+    "description": [
+        "(Originally intended for embedded systems architects)",
+        "The DingDong is a wifi connected door bell and camera. It enables people to be notified if someone is at their door on their phone even before someone has pressed the button. If they have a delivery and are not at home they can tell the delivery guy to just leave it at the door. It also adds security as you have a record of anyone snooping around your house 24/7. You’re going to have figure out the device software and the web services that link everything back to the phone app.",
+        "Prioritised backlog: Play a loud ring; Run a WIFI host to receive a phone app connection that will send new wifi connection details and a password for changing those details; Send a notification to the web service when the button is pushed; Start a two way audio stream once the ring is acknowledged from a client; Start a video stream once the ring is acknowledged from a client; On button press switching from wifi client to wifi host to receive new connection details; Allow changing the password over an established wifi connection; Streaming video to a service to detect movement; Notifying a client of detected movement; Starting video and audio stream when detected movement is acknowledged from a client; Recording video and audio of a detected movement; Allowing a client to trigger a loud alarm",
+        "The hardware level controls are:",
+        " * Wifi that can host an unsecure connection or connect to secure wifi host.",
+        " * Video that can be streamed to a web service",
+        " * Audio that can be two-way streamed to a web service",
+        " * A button press interrupt",
+        " * Some pre-defined ring sounds stored in rom",
+        " * A small button that needs a needle to press"
+    ],
+    "credit": "Geoffrey Dunn"
+}

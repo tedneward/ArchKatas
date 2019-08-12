@@ -1,0 +1,18 @@
+{
+    "title": "FitMe, BitMe",
+    "description": [
+        "(Originally intended for use in embedded systems architecture)",
+        "The FitMan 9000 is a small battery powered device you wear on your wrist. It has Bluetooth LE connectivity, a small LCD screen that is very efficient on the battery. It also contains a pedometer and a pulse monitor. There is only a single physical button on the device. There are lots of functions we need to compete with other similar devices so you already have a huge backlog! Another team is helping out with the phone app but you’re going to have to do all the design work for the device.",
+        "Prioritised backlog: Show the current time; Show the current steps taken today; Show the current pulse; Show the current date; Pair with a phone app; Show notifications from the phone app; Report a low battery warning; Flight mode; See the steps progress toward a daily goal; Show the current battery charge level; Show if the battery is being recharged",
+        "The hardware level controls are:",
+        " * There is an accurate clock giving ticks since epoch",
+        " * Pedometer will send an interrupt whenever a step is detected",
+        " * Pulse Monitor needs to be sent a tick every second and will report back a pulse rate",
+        " * The button will send an interrupt for down and release",
+        " * The Bluetooth control has a detailed API for pairing a device, a socket being connected, data received and data sent",
+        " * The battery can report charge level as a percentage. It also can report if it’s discharging or charging",
+        " * The screen is a 100x200 pixel black and white display",
+        " * A small amount of flash storage (1k)"
+    ],
+    "credit": "Geoffrey Dunn"
+}
