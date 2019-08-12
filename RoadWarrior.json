@@ -1,0 +1,15 @@
+{
+    "title": "Road Warrior",
+    "description": [
+        "A major travel agency wants to build the next generation online trip management dashboard to allow travelers to see all of their existing reservations organized by trip either online of through their mobile device.",
+        "Users: 10,000+ registered users worldwide",
+        "Requirements:",
+        " * The system must interface with the agency’s existing airline, hotel, and car rental interface system to automatically load reservations via frequent flier accounts, hotel point accounts, and car rental rewards accounts.",
+        " * Customers should be able to add existing reservations manually as well.",
+        " * Items in the dashboard should be able to be grouped by trip, and once the trip is complete, the items should automatically be removed from the dashboard.",
+        " * Users should also be able to share their trip information by interfacing with standard social media sites.",
+        " * Richest user interface possible across all deployment platforms",
+        "Additional Context: must integrate seamlessly with existing travel systems; partnership deals are being negotiated to create 'favored' vendors; must work internationally"
+    ],
+    "credit": "Neal Ford"
+}
