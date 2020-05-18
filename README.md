@@ -13,7 +13,7 @@ Nope. This is deliberate--this way this repository will only ever hold katas, an
 ## How do I add a kata to the list?
 Before, you had to email me. Bleah. Now, submit a PR!
 
-## What's your plans going forward?
+## What's your plan going forward?
 In a lot of ways, the system is "done", as in functional, but there's a couple of things I'd like to think about adding:
 
 * **Parameterization.** There's some embedded-systems-only katas in here, and it would be nice to have the JSON reflect that somewhere in its structure, so people could filter out (or in) based on tags.
