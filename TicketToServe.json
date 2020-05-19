@@ -1,0 +1,21 @@
+{
+    "title": "Ticket to serve",
+    "description": [
+        "Sometime being the middleman is better",
+        "Your goal is to provide a centralized ticketing API for every ticket seller to use under the hood of their system.",
+        "You need to provide a various set of feature to help your client manage their show and sell their ticket, but there is also a bunch of feature that may be over scope",
+        "Reseller: about a few thousand, thousands to million user per reseller",
+        "Requirements:",
+        " * You need to provide a system for your client so their user can get a list of available ticket for a show and buy them",
+        " * User wants to be notified when a ticket they are looking at just got bought",
+        " * You have to absolutely make sure no ticket get bought twice",
+        " * You want to get yourself an admin interface to help reseller support with specific operation",
+        " * You should think about implementing a fee system over each purchase",
+        " * You want to provide an event interface to notify reseller (Like some payment being flagged as fraudulent several day after the payment)",
+        " * You need to provide a clear accounting system providing enough information to your reseller so they know how much they are going to make",
+        "Bonus :",
+        " * You may want to provide some hosting capability to your reseller to lower their technical burden",
+        " * As some country have constraining legislation, you want to keep in mind the possibility of completely separating your client or user base for specific legislation"
+    ],
+    "credit": "Suliac Le Guillou, Tom Cully"
+}
