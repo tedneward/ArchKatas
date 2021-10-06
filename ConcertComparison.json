@@ -1,0 +1,14 @@
+{
+    "title": "Concert Comparison",
+    "description": [
+        "A concert ticketing site with big acts and high volume needs an elastic solution to sell tickets.",
+        "Users: thousand of concurrent users, bursts of up to 10,000/second when tickets go on sale",
+        "Requirements:",
+        "allow concurrent ticket buying",
+        "do not sell a seat more than once!",
+        "shoppers can see an overview of remaining seats",
+        "Additional Context:",
+        "consider an implementation in both Space Based and Microservices architecture style",
+        "identify the tradeoffs for each solution"
+    ]
+}

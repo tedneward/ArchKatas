@@ -1,22 +1,21 @@
 {
     "title": "Gird The Grid",
     "description": [
-        A company who builds management software for electrical grids needs to update their outdated software solution, and plan to sell their offering as a platform.
-
-        Users: small to medium size market electic market companies, able to accommodate electrical grids from 100,000-1,900,000 electrical customers
-        Requirements:
-        configurable for specific grid company characteristics (state, tax rates, etc.)
-        state-of-the-art user experience
-        dashboards with analytics reports with near-real time data from the grid
-        excellent reporting capabilities
-        sophisticated analytics-based engine to determine best throughput/money
-        administer through either desktop or mobile devices
-        security penetration attempt reporting
-        Additional Context:
-        Four nines (99.99) reliability
-        turn-key deployment on remote sites
-        security is a first-class concern
-        company wants to shift from managing electrical grids to becoming a software reseller
+        "A company who builds management software for electrical grids needs to update their outdated software solution, and plan to sell their offering as a platform.",
+        "Users: small to medium size market electic market companies, able to accommodate electrical grids from 100,000-1,900,000 electrical customers",
+        "Requirements:",
+        "configurable for specific grid company characteristics (state, tax rates, etc.)",
+        "state-of-the-art user experience",
+        "dashboards with analytics reports with near-real time data from the grid",
+        "excellent reporting capabilities",
+        "sophisticated analytics-based engine to determine best throughput/money",
+        "administer through either desktop or mobile devices",
+        "security penetration attempt reporting",
+        "Additional Context:",
+        "Four nines (99.99) reliability",
+        "turn-key deployment on remote sites",
+        "security is a first-class concern",
+        "company wants to shift from managing electrical grids to becoming a software reseller"
     ],
     "credit": "Neal Ford"
 }
