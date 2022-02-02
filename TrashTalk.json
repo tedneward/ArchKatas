@@ -1,0 +1,10 @@
+{
+    "title": "Trash Talk",
+    "description": [
+        "A medium-sized (~1million users) game studio wants to implement a chat room feature for their game.",
+        "Requirements: players should be able to create public chat rooms, join into them, and discuss content at length with their peers.",
+        "You can assume that each player account has some kind of universally-identifiable unique playerId associated with that individual.",
+        "Additionally, while the game is purely a mobile app, the studio wants the chat functionality to be accessible on any device, including Web, desktop, and (obviously) mobile. (Their current games are written in native mobile tools--Kotlin/Android and Swift/iOS.)",
+        "The game studio does have several new titles almost ready for release, and wants to be able to use the same chat system for each of these new games, as well."
+    ]
+}
