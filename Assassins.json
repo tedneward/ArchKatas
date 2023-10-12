@@ -1,0 +1,9 @@
+{
+    "title" : "Mobile Assassins: The Game",
+    "description" : [
+      "A game company wants to build mobile applications that mimic a combination of the game Assassin (https://en.wikipedia.org/wiki/Assassin_(game)) and the online game AmongUs (https://amongusplay.online/).",
+      "Projected users: millions, in hundreds of thousands of games",
+      "Requirements: players must be able to find 'open' games as well as games to which only invited players can join; mobile interactivity required (phones used to verify kills via geolocation); phones should be able to detect 'safe' zones and disallow play there; players should be able to message each other, both anonymously and nominatively; up to 20 players per game; support a variety of rules variants",
+      "Later phase requirements: video augmented reality 'kill shots', replacing Nerf guns or water balloons; leaderboards; daily messages with news and information updates"
+    ]
+  }
