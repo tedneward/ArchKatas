@@ -1,0 +1,22 @@
+{
+    "title":"Manufacturing for the Finish Line",
+    "description": [
+        "A company specializes in manufacturing pieces for a very popular vehicle. This company needs a system that can ensure everything runs smoothly.",
+        "Users: machinists (hundreds concurrently), shipping agents (3-5 people), quality control (20-30 people), planner (1 per facility), plant managers (1 per facility), engineers (3-5 people)",
+        "Requirements:",
+        " * Keeps track of inventory of materials and parts",
+        " * Notification system for various thresholds of inventory",
+        " * Routing system to know where the parts are in their manufacturing process",
+        " * Track the materials needed for each part",
+        " * Tracks the time of each part at each station throughout the manufacturing process",
+        " * Need to identify and track defects in the process and suggestion potential methods to improve quality or avoid in the future",
+        " * Identify materials qualities and make recommendations of better quality materials suppliers",
+        " * Generates costing reports and suggests where costing issues exist",        
+        "Additional Context:",
+        " * None of the off-the-shelf ERP systems meet their needs. So they need a custom system.",
+        " * The vehicle maker has an agreement with this company that if the vehicle maker's production line is shut down due to shoddy parts or lack of supply, the company can be fined at exorbitant fees per minute down.",
+        " * The manufacturing facilities are located down the street from the vehicle manufacturer. This is a requirement from the vehicle manufacturer to ensure that their production lines continue to run smoothly.",
+        " * There are multiple facilities on this campus, as they also manufacture parts for other clients."
+    ],
+    "credit": "Sadukie"
+}
